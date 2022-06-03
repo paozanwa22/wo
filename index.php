@@ -25,6 +25,7 @@ if( !isset($_SESSION["login"]) ){
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <style>
 
     </style>
@@ -142,8 +143,8 @@ if( !isset($_SESSION["login"]) ){
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">
-
-        <div class="row featurette">
+        
+        <div class="row featurette bgisi">
           <div class="col-md-7">
             <h2 class="featurette-heading">Heading House. <span class="text-muted">It'll blow your mind.</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -171,7 +172,7 @@ if( !isset($_SESSION["login"]) ){
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div class="row featurette bgisi">
           <div class="col-md-7">
             <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -185,7 +186,8 @@ if( !isset($_SESSION["login"]) ){
 
         <!-- /END THE FEATURETTES -->
 
-      </div><!-- /.container -->
+      </div>
+      <!-- /.container -->
 
 
       <!-- FOOTER -->
@@ -221,10 +223,10 @@ if( !isset($_SESSION["login"]) ){
           <div class="col-6 col-md">
             <h5>About</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Team</a></li>
-              <li><a class="text-muted" href="#">Locations</a></li>
-              <li><a class="text-muted" href="#">Privacy</a></li>
-              <li><a class="text-muted" href="#">Sarat & Ketentuan</a></li>
+              <li><a class="text-muted" href="about/kontak.php">Kontak</a></li>
+              <li><a class="text-muted" href="about/kontak.php">Locations</a></li>
+              <li><a class="text-muted" href="about/kontak.php">Team</a></li>
+              <li><a class="text-muted" href="about/kontak.php">Syarat</a></li>
             </ul>
           </div>
         </div>
