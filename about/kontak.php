@@ -31,7 +31,7 @@
       </div>
 
       <div class="my-3 p-3 bg-white rounded shadow-sm">
-        <h6 class="border-bottom border-gray pb-2 mb-0">Kontak</h6>
+        <h6 class="border-bottom border-gray pb-2 mb-0" id="kontak">Kontak</h6>
         <div class="media text-muted pt-3">
           <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
           <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
@@ -56,7 +56,7 @@
       </div>
 
       <div class="my-3 p-3 bg-white rounded shadow-sm">
-        <h6 class="border-bottom border-gray pb-2 mb-0">Team</h6>
+        <h6 class="border-bottom border-gray pb-2 mb-0" id="team">Team</h6>
         <div class="media text-muted pt-3">
           <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
           <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
@@ -90,7 +90,7 @@
         <div class="row">
 
           <small class="d-block text-left mt-5 col-8">
-            <h3>Syarat & Ketentuan</h3>
+            <h3 id="syarat">Syarat & Ketentuan</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem illum ut, excepturi repellat fuga debitis nesciunt! Nisi quam fugiat amet?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate nesciunt quaerat placeat inventore. Autem voluptate, laudantium corporis ipsa dicta aperiam sint? Laborum facilis maxime sequi aliquid minima illum animi.</p>
           </small>

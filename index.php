@@ -224,9 +224,9 @@ if( !isset($_SESSION["login"]) ){
             <h5>About</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-muted" href="about/kontak.php">Kontak</a></li>
-              <li><a class="text-muted" href="about/kontak.php">Locations</a></li>
-              <li><a class="text-muted" href="about/kontak.php">Team</a></li>
-              <li><a class="text-muted" href="about/kontak.php">Syarat</a></li>
+              <li><a class="text-muted" href="about/kontak.php#syarat">Locations</a></li>
+              <li><a class="text-muted" href="about/kontak.php#team">Team</a></li>
+              <li><a class="text-muted" href="about/kontak.php#syarat">Syarat</a></li>
             </ul>
           </div>
         </div>
