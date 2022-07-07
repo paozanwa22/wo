@@ -1,18 +1,20 @@
-<?php 
+<?php
 // koneksi ke database
 $conn = mysqli_connect("localhost", "root", "", "wo");
 
-function query($query) {
+function query($query)
+{
     global $conn;
     $result = mysqli_query($conn, $query);
     $rows = [];
-    while( $row = mysqli_fetch_assoc($result) ) {
+    while ($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
     }
     return $rows;
 }
 
-function register($data) {
+function register($data)
+{
     global $conn;
 
     $username = strtolower(stripslashes($data["username"]));
@@ -21,7 +23,7 @@ function register($data) {
 
     // cek username sudah ada atau belum
     $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username'");
-    if( mysqli_fetch_assoc($result) ) {
+    if (mysqli_fetch_assoc($result)) {
         echo "<script>
                 alert('username sudah terdaftar!');
             </script>";
@@ -29,7 +31,7 @@ function register($data) {
     }
 
     // cek konfirmasi password
-    if( $password !== $password2 ) {
+    if ($password !== $password2) {
         echo "<script>
                 alert('konfirmasi password tidak sesuai!');
             </script>";
@@ -45,4 +47,18 @@ function register($data) {
     return mysqli_affected_rows($conn);
 }
 
-?>
+function pesanan($data)
+{
+    global $conn;
+    $firstName = $data['firstName'];
+    $lastName = $data['lastName'];
+    $email = $data['email'];
+    $address = $data['address'];
+    $tanggal = $data['tanggal'];
+    $package = $data['package'];
+
+    // tambahkan pesanan baru ke database
+    mysqli_query($conn, "INSERT INTO pesanan VALUES('', '$firstName', '$lastName', '$email', '$address', '$tanggal', '$package', '')");
+
+    return mysqli_affected_rows($conn);
+}
